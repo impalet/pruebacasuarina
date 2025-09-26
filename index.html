@@ -1,22 +1,42 @@
 <!doctype html>
 <html lang="es" class="scroll-smooth">
+  
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="icon" type="image/x-icon" href="./src/assets/favicon.png">
   <title>Las Casuarinas del Sur — Venta de Terrenos</title>
 
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
-    .whatsapp-btn:hover { transform: translateY(-3px); }
-    .navlink{position:relative}
-    .navlink::after{
-      content:"";position:absolute;left:0;bottom:-6px;width:100%;height:2px;
-      background:linear-gradient(90deg,#06b6d4 0%,#10b981 100%);
-      transform:scaleX(0);transform-origin:left;transition:transform .25s ease
+    .whatsapp-btn:hover {
+      transform: translateY(-3px);
     }
-    .navlink:hover::after,.navlink:focus-visible::after{transform:scaleX(1)}
+
+    .navlink {
+      position: relative
+    }
+
+    .navlink::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg, #06b6d4 0%, #10b981 100%);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform .25s ease
+    }
+
+    .navlink:hover::after,
+    .navlink:focus-visible::after {
+      transform: scaleX(1)
+    }
   </style>
 </head>
 
@@ -26,10 +46,11 @@
   <header class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b border-cyan-100">
     <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
       <!-- Marca (más gruesita, elegante, mismo color) -->
-      <div class="flex items-center gap-4">
-       <div class="text-2xl sm:text-4xl md:text-5xl font-serif font-extrabold tracking-tight text-emerald-700 drop-shadow-sm">
-  Las Casuarinas del Sur
-</div>
+      <div class="w-full justify-around flex items-center gap-4">
+        <div
+          class="text-xl sm:text-2xl font-serif font-extrabold tracking-tight text-emerald-700 drop-shadow-sm">
+          Las Casuarinas del Sur
+        </div>
         <div class="hidden sm:block">
           <h1 class="font-semibold text-lg text-cyan-900">Las Casuarinas del Sur</h1>
           <p class="text-sm text-gray-500">Lotes desde 120 m² — LOTES disponibles</p>
@@ -38,17 +59,20 @@
 
       <!-- Menú -->
       <nav class="hidden md:flex items-center gap-2 text-sm">
-        <a href="#galeria" class="navlink px-3 py-2 rounded-full text-gray-700 hover:text-cyan-800 hover:bg-cyan-50 transition-colors">Fotos</a>
-        <a href="#video"   class="navlink px-3 py-2 rounded-full text-gray-700 hover:text-cyan-800 hover:bg-cyan-50 transition-colors">Video</a>
-        <a href="#info"    class="navlink px-3 py-2 rounded-full text-gray-700 hover:text-cyan-800 hover:bg-cyan-50 transition-colors">Información</a>
-        <a href="#plano"   class="navlink px-3 py-2 rounded-full text-gray-700 hover:text-cyan-800 hover:bg-cyan-50 transition-colors">Plano</a>
+        <a href="#galeria"
+          class="navlink px-3 py-2 rounded-full text-gray-700 hover:text-cyan-800 hover:bg-cyan-50 transition-colors">Fotos</a>
+        <a href="#video"
+          class="navlink px-3 py-2 rounded-full text-gray-700 hover:text-cyan-800 hover:bg-cyan-50 transition-colors">Video</a>
+        <a href="#info"
+          class="navlink px-3 py-2 rounded-full text-gray-700 hover:text-cyan-800 hover:bg-cyan-50 transition-colors">Información</a>
+        <a href="#plano"
+          class="navlink px-3 py-2 rounded-full text-gray-700 hover:text-cyan-800 hover:bg-cyan-50 transition-colors">Plano</a>
       </nav>
 
       <!-- CTA escritorio -->
       <div class="hidden md:block">
-        <a href="https://wa.me/51989212154?text=Hola%20tengo%20inter%C3%A9s%20en%20los%20terrenos"
-           target="_blank" rel="noopener"
-           class="inline-flex items-center gap-2 px-4 py-2 rounded-lg shadow bg-cyan-600 hover:bg-cyan-700 text-white
+        <a href="https://wa.me/51989212154?text=Hola%20tengo%20inter%C3%A9s%20en%20los%20terrenos" target="_blank"
+          rel="noopener" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg shadow bg-cyan-600 hover:bg-cyan-700 text-white
                   focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2">
           WhatsApp
         </a>
@@ -59,9 +83,12 @@
   <!-- HERO -->
   <main class="max-w-6xl mx-auto px-6 py-12">
     <section class="relative">
-      <div class="absolute -inset-4 -z-10 rounded-3xl bg-gradient-to-tr from-cyan-100 via-emerald-50 to-transparent blur-2xl opacity-70"></div>
+      <div
+        class="absolute -inset-4 -z-10 rounded-3xl bg-gradient-to-tr from-cyan-100 via-emerald-50 to-transparent blur-2xl opacity-70">
+      </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center rounded-2xl bg-white/70 backdrop-blur ring-1 ring-cyan-100 p-6 md:p-8">
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center rounded-2xl bg-white/70 backdrop-blur ring-1 ring-cyan-100 p-6 md:p-8">
         <div>
           <h2 class="text-3xl font-extrabold text-cyan-900 mb-4">Tu Terreno Ideal a 12 minutos de la Playa</h2>
           <p class="text-gray-700 mb-6">
@@ -70,22 +97,22 @@
           </p>
 
           <!-- LISTA con checks discretos (esmeralda suave, sin fondo) -->
-            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-800 mb-6">
+          <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-800 mb-6">
             <li>✅ de 120 ,126 y 144 m²</li>
             <li>✅ Acceso 24/7</li>
             <li>✅ Servicios básicos(próximo con luz del sur)
-                                                              </li>
+            </li>
             <li>✅ Documentos en Regla</li>
           </ul>
 
           <!-- CTA móvil -->
           <div class="md:hidden">
-            <a href="https://wa.me/51989212154?text=Hola%20tengo%20inter%C3%A9s%20en%20los%20terrenos"
-               target="_blank" rel="noopener"
-               class="inline-flex items-center gap-3 px-5 py-3 bg-cyan-600 hover:bg-cyan-700 text-white rounded-lg shadow-lg
+            <a href="https://wa.me/51989212154?text=Hola%20tengo%20inter%C3%A9s%20en%20los%20terrenos" target="_blank"
+              rel="noopener" class="inline-flex items-center gap-3 px-5 py-3 bg-cyan-600 hover:bg-cyan-700 text-white rounded-lg shadow-lg
                       transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M20.52 3.48A11.88 11.88 0 0012.03.12 11.97 11.97 0 001.5 11.63c0 2.1.55 4.08 1.6 5.86L.12 23.5l6.26-1.64A11.86 11.86 0 0012 23.5c6.62 0 11.98-5.36 11.98-11.98 0-3.21-1.25-6.21-3.46-8.04z"/>
+                <path
+                  d="M20.52 3.48A11.88 11.88 0 0012.03.12 11.97 11.97 0 001.5 11.63c0 2.1.55 4.08 1.6 5.86L.12 23.5l6.26-1.64A11.86 11.86 0 0012 23.5c6.62 0 11.98-5.36 11.98-11.98 0-3.21-1.25-6.21-3.46-8.04z" />
               </svg>
               Enviar WhatsApp
             </a>
@@ -95,12 +122,8 @@
         <!-- Imagen -->
         <div class="space-y-4">
           <div class="rounded-xl border border-cyan-100 p-1 bg-white shadow-sm">
-            <img
-              src="portada.jpg"
-              alt="Terreno disponible con vistas abiertas"
-              class="w-full rounded-lg shadow-lg object-cover h-64 md:h-80"
-              loading="lazy"
-            />
+            <img src="portada.jpg" alt="Terreno disponible con vistas abiertas"
+              class="w-full rounded-lg shadow-lg object-cover h-64 md:h-80" loading="lazy" />
           </div>
         </div>
       </div>
@@ -108,218 +131,201 @@
   </main>
 
   <!-- SECCIONES -->
- <section id="galeria" class="bg-gradient-to-b from-cyan-50 to-white">
-  <div class="max-w-6xl mx-auto px-6 py-16">
-    <h2 class="text-2xl font-bold text-cyan-900 mb-2">Galería</h2>
-    <div class="h-1 w-20 bg-gradient-to-r from-cyan-500 to-emerald-500 rounded-full mb-6"></div>
+  <section id="galeria" class="bg-gradient-to-b from-cyan-50 to-white">
+    <div class="max-w-6xl mx-auto px-6 py-16">
+      <h2 class="text-2xl font-bold text-cyan-900 mb-2">Galería</h2>
+      <div class="h-1 w-20 bg-gradient-to-r from-cyan-500 to-emerald-500 rounded-full mb-6"></div>
 
-    <!-- Carrusel de fotos -->
-    <div id="gallery-carousel" role="region" aria-label="Galería de fotos" class="relative">
-      <div class="overflow-hidden rounded-xl ring-1 ring-cyan-100 bg-white">
-        <!-- Pista deslizante -->
-        <div class="flex transition-transform duration-500 ease-out" data-ic-track>
-          <!-- 9 slides -->
-          <div class="w-full shrink-0 p-1">
-            <img src="galeria/1.jpg" alt="Foto 1 de la galería"
-                 class="w-full aspect-[4/3] md:aspect-[16/9] object-cover rounded-lg"
-                 loading="lazy" decoding="async" draggable="false" />
-          </div>
-          <div class="w-full shrink-0 p-1">
-            <img src="galeria/2.jpg" alt="Foto 2 de la galería"
-                 class="w-full aspect-[4/3] md:aspect-[16/9] object-cover rounded-lg"
-                 loading="lazy" decoding="async" draggable="false" />
-          </div>
-          <div class="w-full shrink-0 p-1">
-            <img src="galeria/3.jpg" alt="Foto 3 de la galería"
-                 class="w-full aspect-[4/3] md:aspect-[16/9] object-cover rounded-lg"
-                 loading="lazy" decoding="async" draggable="false" />
-          </div>
-          <div class="w-full shrink-0 p-1">
-            <img src="galeria/4.jpg" alt="Foto 4 de la galería"
-                 class="w-full aspect-[4/3] md:aspect-[16/9] object-cover rounded-lg"
-                 loading="lazy" decoding="async" draggable="false" />
-          </div>
-          <div class="w-full shrink-0 p-1">
-            <img src="galeria/5.jpg" alt="Foto 5 de la galería"
-                 class="w-full aspect-[4/3] md:aspect-[16/9] object-cover rounded-lg"
-                 loading="lazy" decoding="async" draggable="false" />
-          </div>
-          <div class="w-full shrink-0 p-1">
-            <img src="galeria/6.jpg" alt="Foto 6 de la galería"
-                 class="w-full aspect-[4/3] md:aspect-[16/9] object-cover rounded-lg"
-                 loading="lazy" decoding="async" draggable="false" />
-          </div>
-          <div class="w-full shrink-0 p-1">
-            <img src="galeria/7.jpg" alt="Foto 7 de la galería"
-                 class="w-full aspect-[4/3] md:aspect-[16/9] object-cover rounded-lg"
-                 loading="lazy" decoding="async" draggable="false" />
-          </div>
-          <div class="w-full shrink-0 p-1">
-            <img src="galeria/8.jpg" alt="Foto 8 de la galería"
-                 class="w-full aspect-[4/3] md:aspect-[16/9] object-cover rounded-lg"
-                 loading="lazy" decoding="async" draggable="false" />
-          </div>
-          <div class="w-full shrink-0 p-1">
-            <img src="galeria/9.jpg" alt="Foto 9 de la galería"
-                 class="w-full aspect-[4/3] md:aspect-[16/9] object-cover rounded-lg"
-                 loading="lazy" decoding="async" draggable="false" />
+      <!-- Carrusel de fotos -->
+      <div id="gallery-carousel" role="region" aria-label="Galería de fotos" class="relative">
+        <div class="overflow-hidden rounded-xl ring-1 ring-cyan-100 bg-white">
+          <!-- Pista deslizante -->
+          <div class="flex transition-transform duration-500 ease-out" data-ic-track>
+            <!-- 9 slides -->
+            <div class="w-full shrink-0 p-1">
+              <img src="galeria/1.jpg" alt="Foto 1 de la galería"
+                class="w-full aspect-[4/3] md:aspect-[16/9] object-cover rounded-lg" loading="lazy" decoding="async"
+                draggable="false" />
+            </div>
+            <div class="w-full shrink-0 p-1">
+              <img src="galeria/2.jpg" alt="Foto 2 de la galería"
+                class="w-full aspect-[4/3] md:aspect-[16/9] object-cover rounded-lg" loading="lazy" decoding="async"
+                draggable="false" />
+            </div>
+            <div class="w-full shrink-0 p-1">
+              <img src="galeria/3.jpg" alt="Foto 3 de la galería"
+                class="w-full aspect-[4/3] md:aspect-[16/9] object-cover rounded-lg" loading="lazy" decoding="async"
+                draggable="false" />
+            </div>
+            <div class="w-full shrink-0 p-1">
+              <img src="galeria/4.jpg" alt="Foto 4 de la galería"
+                class="w-full aspect-[4/3] md:aspect-[16/9] object-cover rounded-lg" loading="lazy" decoding="async"
+                draggable="false" />
+            </div>
+            <div class="w-full shrink-0 p-1">
+              <img src="galeria/5.jpg" alt="Foto 5 de la galería"
+                class="w-full aspect-[4/3] md:aspect-[16/9] object-cover rounded-lg" loading="lazy" decoding="async"
+                draggable="false" />
+            </div>
+            <div class="w-full shrink-0 p-1">
+              <img src="galeria/6.jpg" alt="Foto 6 de la galería"
+                class="w-full aspect-[4/3] md:aspect-[16/9] object-cover rounded-lg" loading="lazy" decoding="async"
+                draggable="false" />
+            </div>
+            <div class="w-full shrink-0 p-1">
+              <img src="galeria/7.jpg" alt="Foto 7 de la galería"
+                class="w-full aspect-[4/3] md:aspect-[16/9] object-cover rounded-lg" loading="lazy" decoding="async"
+                draggable="false" />
+            </div>
+            <div class="w-full shrink-0 p-1">
+              <img src="galeria/8.jpg" alt="Foto 8 de la galería"
+                class="w-full aspect-[4/3] md:aspect-[16/9] object-cover rounded-lg" loading="lazy" decoding="async"
+                draggable="false" />
+            </div>
+            <div class="w-full shrink-0 p-1">
+              <img src="galeria/9.jpg" alt="Foto 9 de la galería"
+                class="w-full aspect-[4/3] md:aspect-[16/9] object-cover rounded-lg" loading="lazy" decoding="async"
+                draggable="false" />
+            </div>
           </div>
         </div>
+
+        <!-- Controles -->
+        <button type="button" aria-label="Foto anterior" data-ic-prev
+          class="absolute left-2 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white/80 hover:bg-white shadow border border-cyan-100">
+          &#8592;
+        </button>
+        <button type="button" aria-label="Siguiente foto" data-ic-next
+          class="absolute right-2 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white/80 hover:bg-white shadow border border-cyan-100">
+          &#8594;
+        </button>
+
+        <!-- Indicadores (se crean por JS) -->
+        <!-- Indicadores -->
+        <div class="mt-4 flex items-center justify-center gap-2" data-ic-dots></div>
+
+
       </div>
-
-      <!-- Controles -->
-      <button type="button" aria-label="Foto anterior" data-ic-prev
-              class="absolute left-2 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white/80 hover:bg-white shadow border border-cyan-100">
-        &#8592;
-      </button>
-      <button type="button" aria-label="Siguiente foto" data-ic-next
-              class="absolute right-2 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white/80 hover:bg-white shadow border border-cyan-100">
-        &#8594;
-      </button>
-
-      <!-- Indicadores (se crean por JS) -->
-      <!-- Indicadores -->
-<div class="mt-4 flex items-center justify-center gap-2" data-ic-dots></div>
-
-
     </div>
-  </div>
-</section>
+  </section>
 
 
- <section id="video" class="bg-white">
-  <div class="max-w-6xl mx-auto px-6 py-16">
-    <h2 class="text-2xl font-bold text-cyan-900 mb-2">Videos: Cómo llegar</h2>
-    <div class="h-1 w-20 bg-gradient-to-r from-cyan-500 to-emerald-500 rounded-full mb-6"></div>
+  <section id="video" class="bg-white">
+    <div class="max-w-6xl mx-auto px-6 py-16">
+      <h2 class="text-2xl font-bold text-cyan-900 mb-2">Videos: Cómo llegar</h2>
+      <div class="h-1 w-20 bg-gradient-to-r from-cyan-500 to-emerald-500 rounded-full mb-6"></div>
 
-    <div id="yt-carousel" role="region" aria-label="Carrusel de videos (YouTube)" class="relative">
-      <div class="overflow-hidden rounded-xl ring-1 ring-cyan-100 bg-white">
-        <div class="flex transition-transform duration-500 ease-out" data-yt-track>
-          
-          <!-- Video 1 -->
-          <div class="w-full shrink-0 p-1">
-            <div class="relative w-full aspect-video bg-black rounded-lg overflow-hidden">
-              <iframe class="w-full h-full"
-                title="Cómo llegar 1"
-                loading="lazy"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-                
-                data-src="https://www.youtube.com/embed/wtxdGd-Bd3Q?rel=0&modestbranding=1&playsinline=1">
-              </iframe>
+      <div id="yt-carousel" role="region" aria-label="Carrusel de videos (YouTube)" class="relative">
+        <div class="overflow-hidden rounded-xl ring-1 ring-cyan-100 bg-white">
+          <div class="flex transition-transform duration-500 ease-out" data-yt-track>
+
+            <!-- Video 1 -->
+            <div class="w-full shrink-0 p-1">
+              <div class="relative w-full aspect-video bg-black rounded-lg overflow-hidden">
+                <iframe class="w-full h-full" title="Cómo llegar 1" loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                  data-src="https://www.youtube.com/embed/wtxdGd-Bd3Q?rel=0&modestbranding=1&playsinline=1">
+                </iframe>
+              </div>
             </div>
-          </div>
 
-          <!-- Video 2 -->
-          <div class="w-full shrink-0 p-1">
-            <div class="relative w-full aspect-video bg-black rounded-lg overflow-hidden">
-              <iframe class="w-full h-full"
-                title="Cómo llegar 2"
-                loading="lazy"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-                data-src="https://www.youtube.com/embed/aETz7SYS6-w?rel=0&modestbranding=1&playsinline=1">
-              </iframe>
+            <!-- Video 2 -->
+            <div class="w-full shrink-0 p-1">
+              <div class="relative w-full aspect-video bg-black rounded-lg overflow-hidden">
+                <iframe class="w-full h-full" title="Cómo llegar 2" loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                  data-src="https://www.youtube.com/embed/aETz7SYS6-w?rel=0&modestbranding=1&playsinline=1">
+                </iframe>
+              </div>
             </div>
-          </div>
 
-          <!-- Video 3 -->
-          <div class="w-full shrink-0 p-1">
-            <div class="relative w-full aspect-video bg-black rounded-lg overflow-hidden">
-              <iframe class="w-full h-full"
-                title="Cómo llegar 3"
-                loading="lazy"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-                data-src="https://www.youtube.com/embed/UgsvAVeVKhI?rel=0&modestbranding=1&playsinline=1">
-                
-              </iframe>
+            <!-- Video 3 -->
+            <div class="w-full shrink-0 p-1">
+              <div class="relative w-full aspect-video bg-black rounded-lg overflow-hidden">
+                <iframe class="w-full h-full" title="Cómo llegar 3" loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                  data-src="https://www.youtube.com/embed/UgsvAVeVKhI?rel=0&modestbranding=1&playsinline=1">
+
+                </iframe>
+              </div>
             </div>
-          </div>
 
-          <!-- Video 4 -->
-          <div class="w-full shrink-0 p-1">
-            <div class="relative w-full aspect-video bg-black rounded-lg overflow-hidden">
-              <iframe class="w-full h-full"
-                title="Cómo llegar 4"
-                loading="lazy"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-                data-src="https://www.youtube.com/embed/RR9Su2C_qTE?rel=0&modestbranding=1&playsinline=1">
-              </iframe>
+            <!-- Video 4 -->
+            <div class="w-full shrink-0 p-1">
+              <div class="relative w-full aspect-video bg-black rounded-lg overflow-hidden">
+                <iframe class="w-full h-full" title="Cómo llegar 4" loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                  data-src="https://www.youtube.com/embed/RR9Su2C_qTE?rel=0&modestbranding=1&playsinline=1">
+                </iframe>
+              </div>
             </div>
-          </div>
 
-          <!-- Video 5 -->
-          <div class="w-full shrink-0 p-1">
-            <div class="relative w-full aspect-video bg-black rounded-lg overflow-hidden">
-              <iframe class="w-full h-full"
-                title="Cómo llegar 5"
-                loading="lazy"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-                data-src="https://www.youtube.com/embed/4Jyim5_VWVU?rel=0&modestbranding=1&playsinline=1">
-              </iframe>
+            <!-- Video 5 -->
+            <div class="w-full shrink-0 p-1">
+              <div class="relative w-full aspect-video bg-black rounded-lg overflow-hidden">
+                <iframe class="w-full h-full" title="Cómo llegar 5" loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                  data-src="https://www.youtube.com/embed/4Jyim5_VWVU?rel=0&modestbranding=1&playsinline=1">
+                </iframe>
+              </div>
             </div>
-          </div>
 
-          <!-- Video 6 -->
-          <div class="w-full shrink-0 p-1">
-            <div class="relative w-full aspect-video bg-black rounded-lg overflow-hidden">
-              <iframe class="w-full h-full"
-                title="Cómo llegar 6"
-                loading="lazy"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-                data-src="https://www.youtube.com/embed/ts-iiUV213Y?rel=0&modestbranding=1&playsinline=1">
-              </iframe>
+            <!-- Video 6 -->
+            <div class="w-full shrink-0 p-1">
+              <div class="relative w-full aspect-video bg-black rounded-lg overflow-hidden">
+                <iframe class="w-full h-full" title="Cómo llegar 6" loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                  data-src="https://www.youtube.com/embed/ts-iiUV213Y?rel=0&modestbranding=1&playsinline=1">
+                </iframe>
+              </div>
             </div>
-          </div>
 
-          <!-- Video 7 -->
-          <div class="w-full shrink-0 p-1">
-            <div class="relative w-full aspect-video bg-black rounded-lg overflow-hidden">
-              <iframe class="w-full h-full"
-                title="Cómo llegar 7"
-                loading="lazy"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-                data-src="https://www.youtube.com/embed/1MbwcHbhAKQ?rel=0&modestbranding=1&playsinline=1">
-              </iframe>
+            <!-- Video 7 -->
+            <div class="w-full shrink-0 p-1">
+              <div class="relative w-full aspect-video bg-black rounded-lg overflow-hidden">
+                <iframe class="w-full h-full" title="Cómo llegar 7" loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                  data-src="https://www.youtube.com/embed/1MbwcHbhAKQ?rel=0&modestbranding=1&playsinline=1">
+                </iframe>
+              </div>
             </div>
-          </div>
 
-          <!-- Video 8 -->
-          <div class="w-full shrink-0 p-1">
-            <div class="relative w-full aspect-video bg-black rounded-lg overflow-hidden">
-              <iframe class="w-full h-full"
-                title="Cómo llegar 8"
-                loading="lazy"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-                data-src="https://www.youtube.com/embed/4PYosv9AVP0?rel=0&modestbranding=1&playsinline=1">
-              </iframe>
+            <!-- Video 8 -->
+            <div class="w-full shrink-0 p-1">
+              <div class="relative w-full aspect-video bg-black rounded-lg overflow-hidden">
+                <iframe class="w-full h-full" title="Cómo llegar 8" loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                  data-src="https://www.youtube.com/embed/4PYosv9AVP0?rel=0&modestbranding=1&playsinline=1">
+                </iframe>
+              </div>
             </div>
-          </div>
 
+          </div>
         </div>
+
+        <!-- Controles -->
+        <button type="button" aria-label="Video anterior" data-yt-prev
+          class="absolute left-2 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white/80 hover:bg-white shadow border border-cyan-100">
+          &#8592;
+        </button>
+        <button type="button" aria-label="Siguiente video" data-yt-next
+          class="absolute right-2 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white/80 hover:bg-white shadow border border-cyan-100">
+          &#8594;
+        </button>
+
+        <!-- Puntos -->
+        <div class="mt-4 flex items-center justify-center gap-2" data-yt-dots></div>
       </div>
-
-      <!-- Controles -->
-      <button type="button" aria-label="Video anterior" data-yt-prev
-        class="absolute left-2 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white/80 hover:bg-white shadow border border-cyan-100">
-        &#8592;
-      </button>
-      <button type="button" aria-label="Siguiente video" data-yt-next
-        class="absolute right-2 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white/80 hover:bg-white shadow border border-cyan-100">
-        &#8594;
-      </button>
-
-      <!-- Puntos -->
-      <div class="mt-4 flex items-center justify-center gap-2" data-yt-dots></div>
     </div>
-  </div>
-</section>
+  </section>
 
 
 
@@ -335,52 +341,44 @@
       </ul>
     </div>
   </section>
-<section id="plano" class="bg-white">
-  <div class="max-w-6xl mx-auto px-6 py-16">
-    <h2 class="text-2xl font-bold text-cyan-900 mb-2">Plano</h2>
-    <div class="h-1 w-20 bg-gradient-to-r from-cyan-500 to-emerald-500 rounded-full mb-6"></div>
+  <section id="plano" class="bg-white">
+    <div class="max-w-6xl mx-auto px-6 py-16">
+      <h2 class="text-2xl font-bold text-cyan-900 mb-2">Plano</h2>
+      <div class="h-1 w-20 bg-gradient-to-r from-cyan-500 to-emerald-500 rounded-full mb-6"></div>
 
-    <!-- Desktop: imagen completa, ajustada al viewport -->
-    <div class="hidden md:block">
-      <div class="w-full h-[75vh] rounded-xl ring-1 ring-cyan-100 bg-white overflow-hidden">
-        <img
-          src="planito.jpg"
-          alt="Plano general del proyecto Las Casuarinas del Sur"
-          class="w-full h-full object-contain"
-          loading="lazy"
-        />
+      <!-- Desktop: imagen completa, ajustada al viewport -->
+      <div class="hidden md:block">
+        <div class="w-full h-[75vh] rounded-xl ring-1 ring-cyan-100 bg-white overflow-hidden">
+          <img src="planito.jpg" alt="Plano general del proyecto Las Casuarinas del Sur"
+            class="w-full h-full object-contain" loading="lazy" />
+        </div>
+        <p class="mt-2 text-xs text-gray-500">Vista completa del plano (ajustada a la pantalla).</p>
       </div>
-      <p class="mt-2 text-xs text-gray-500">Vista completa del plano (ajustada a la pantalla).</p>
-    </div>
 
-    <!-- Móvil: miniatura que abre el visor a tamaño real -->
-    <div class="md:hidden">
-      <button id="openPlan" type="button" class="block w-full">
-        <img
-          src="planito.jpg"
-          alt="Plano general del proyecto"
-          class="w-full max-w-xs mx-auto rounded-lg shadow ring-1 ring-cyan-100 cursor-zoom-in"
-          loading="lazy"
-        />
-      </button>
-      <p class="mt-2 text-xs text-gray-500 text-center">Toca para ver a tamaño real.</p>
-    </div>
-  </div>
-
-  <!-- Lightbox / visor -->
-  <div id="planLightbox" class="fixed inset-0 z-50 hidden">
-    <div class="absolute inset-0 bg-black/80" data-close></div>
-    <div class="relative z-10 w-full h-full flex items-center justify-center p-4">
-      <div class="relative max-w-[95vw] max-h-[90vh] bg-white rounded-xl shadow-lg overflow-auto">
-        <img src="planito.jpg" alt="Plano a tamaño real" class="block max-w-none" />
-        <button data-close
-          class="absolute top-2 right-2 px-3 py-1.5 text-sm rounded-md bg-emerald-600 hover:bg-emerald-700 text-white shadow">
-          Cerrar
+      <!-- Móvil: miniatura que abre el visor a tamaño real -->
+      <div class="md:hidden">
+        <button id="openPlan" type="button" class="block w-full">
+          <img src="planito.jpg" alt="Plano general del proyecto"
+            class="w-full max-w-xs mx-auto rounded-lg shadow ring-1 ring-cyan-100 cursor-zoom-in" loading="lazy" />
         </button>
+        <p class="mt-2 text-xs text-gray-500 text-center">Toca para ver a tamaño real.</p>
       </div>
     </div>
-  </div>
-</section>
+
+    <!-- Lightbox / visor -->
+    <div id="planLightbox" class="fixed inset-0 z-50 hidden">
+      <div class="absolute inset-0 bg-black/80" data-close></div>
+      <div class="relative z-10 w-full h-full flex items-center justify-center p-4">
+        <div class="relative max-w-[95vw] max-h-[90vh] bg-white rounded-xl shadow-lg overflow-auto">
+          <img src="planito.jpg" alt="Plano a tamaño real" class="block max-w-none" />
+          <button data-close
+            class="absolute top-2 right-2 px-3 py-1.5 text-sm rounded-md bg-emerald-600 hover:bg-emerald-700 text-white shadow">
+            Cerrar
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 
@@ -388,374 +386,381 @@
 
   <!-- BOTÓN FLOTANTE WHATSAPP -->
   <a id="whatsapp-fixed"
-     class="whatsapp-btn fixed right-5 bottom-5 z-50 inline-flex items-center gap-3 px-4 py-3
+    class="whatsapp-btn fixed right-5 bottom-5 z-50 inline-flex items-center gap-3 px-4 py-3
             bg-emerald-600 hover:bg-emerald-700 text-white rounded-full shadow-lg
             transition-transform duration-200 focus:outline-none focus:ring-2 focus:ring-emerald-300 focus:ring-offset-2"
-     href="https://wa.me/51989212154?text=Hola%20quiero%20m%C3%A1s%20info%20de%20los%20terrenos"
-     target="_blank" rel="noopener">
+    href="https://wa.me/51989212154?text=Hola%20quiero%20m%C3%A1s%20info%20de%20los%20terrenos" target="_blank"
+    rel="noopener">
     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-      <path d="M20.52 3.48A11.88 11.88 0 0012.03.12 11.97 11.97 0 001.5 11.63c0 2.1.55 4.08 1.6 5.86L.12 23.5l6.26-1.64A11.86 11.86 0 0012 23.5c6.62 0 11.98-5.36 11.98-11.98 0-3.21-1.25-6.21-3.46-8.04z"/>
+      <path
+        d="M20.52 3.48A11.88 11.88 0 0012.03.12 11.97 11.97 0 001.5 11.63c0 2.1.55 4.08 1.6 5.86L.12 23.5l6.26-1.64A11.86 11.86 0 0012 23.5c6.62 0 11.98-5.36 11.98-11.98 0-3.21-1.25-6.21-3.46-8.04z" />
     </svg>
     <span class="hidden sm:inline">WhatsApp</span>
   </a>
-<!-- BOTÓN FLOTANTE WHATSAPP -->
-  
-<script>
-(() => {
-  const root = document.getElementById('video-carousel');
-  if (!root) return;
+  <!-- BOTÓN FLOTANTE WHATSAPP -->
 
-  const track   = root.querySelector('[data-carousel-track]');
-  const slides  = Array.from(track.children);
-  const prevBtn = root.querySelector('[data-prev]');
-  const nextBtn = root.querySelector('[data-next]');
-  const dotsBox = root.querySelector('[data-dots]');
-
-  let index = 0;
-
-  // Crear puntitos según la cantidad de slides
-  dotsBox.innerHTML = '';
-  const dots = slides.map((_, i) => {
-    const b = document.createElement('button');
-    b.className = 'h-2.5 w-2.5 rounded-full bg-gray-300 transition-all';
-    b.setAttribute('aria-label', `Ir al video ${i+1}`);
-    b.dataset.dot = i;
-    dotsBox.appendChild(b);
-    b.addEventListener('click', () => goTo(i));
-    return b;
-  });
-
-  function update() {
-    track.style.transform = `translateX(-${index * 100}%)`;
-
-    // Actualiza puntitos
-    dots.forEach((d, i) => {
-      const active = i === index;
-      d.classList.toggle('bg-gradient-to-r', active);
-      d.classList.toggle('from-cyan-500', active);
-      d.classList.toggle('to-emerald-500', active);
-      d.classList.toggle('bg-gray-300', !active);
-      d.classList.toggle('w-6', active);
-      d.classList.toggle('w-2.5', !active);
-    });
-
-    // Pausa los videos fuera de pantalla
-    slides.forEach((slide, i) => {
-      const vid = slide.querySelector('video');
-      if (vid && i !== index) vid.pause();
-    });
-  }
-
-  function goTo(i) {
-    const total = slides.length;
-    index = (i + total) % total; // circular
-    update();
-  }
-
-  prevBtn.addEventListener('click', () => goTo(index - 1));
-  nextBtn.addEventListener('click', () => goTo(index + 1));
-
-  // Teclado
-  root.tabIndex = 0;
-  root.addEventListener('keydown', (e) => {
-    if (e.key === 'ArrowRight') goTo(index + 1);
-    if (e.key === 'ArrowLeft')  goTo(index - 1);
-  });
-
-  // Swipe en móvil (sin bloquear gestos del video)
-  let startX = 0, deltaX = 0, touching = false;
-  const threshold = 40;
-
-  root.addEventListener('touchstart', (e) => {
-    if (e.target.tagName === 'VIDEO') return;
-    touching = true;
-    startX = e.touches[0].clientX;
-    deltaX = 0;
-  }, { passive: true });
-
-  root.addEventListener('touchmove', (e) => {
-    if (!touching) return;
-    deltaX = e.touches[0].clientX - startX;
-  }, { passive: true });
-
-  root.addEventListener('touchend', () => {
-    if (!touching) return;
-    if (Math.abs(deltaX) > threshold) goTo(index + (deltaX < 0 ? 1 : -1));
-    touching = false;
-  });
-
-  update(); // estado inicial
-})();
-</script>
-
-
-
-<!-- separado de -->
-
-<script>
-(() => {
-  const openBtn = document.getElementById('openPlan');
-  const box = document.getElementById('planLightbox');
-  if (!openBtn || !box) return;
-
-  const closeEls = box.querySelectorAll('[data-close]');
-
-  function open() {
-    box.classList.remove('hidden');
-    document.body.classList.add('overflow-hidden');
-  }
-  function close() {
-    box.classList.add('hidden');
-    document.body.classList.remove('overflow-hidden');
-  }
-
-  openBtn.addEventListener('click', open);
-  closeEls.forEach(el => el.addEventListener('click', close));
-  window.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
-})();
-</script>
-
- <!-- separado de galeria -->
   <script>
-(() => {
-  const root = document.getElementById('gallery-carousel');
-  if (!root) return;
+    (() => {
+      const root = document.getElementById('video-carousel');
+      if (!root) return;
 
-  const track   = root.querySelector('[data-ic-track]');
-  const slides  = Array.from(track.children);
-  const prevBtn = root.querySelector('[data-ic-prev]');
-  const nextBtn = root.querySelector('[data-ic-next]');
+      const track = root.querySelector('[data-carousel-track]');
+      const slides = Array.from(track.children);
+      const prevBtn = root.querySelector('[data-prev]');
+      const nextBtn = root.querySelector('[data-next]');
+      const dotsBox = root.querySelector('[data-dots]');
 
-  // Crea el contenedor de dots si no existe
-  let dotsBox = root.querySelector('[data-ic-dots]');
-  if (!dotsBox) {
-    dotsBox = document.createElement('div');
-    dotsBox.className = 'mt-4 flex items-center justify-center gap-2';
-    dotsBox.setAttribute('data-ic-dots', '');
-    root.appendChild(dotsBox);
-  }
+      let index = 0;
 
-  let index = 0;
+      // Crear puntitos según la cantidad de slides
+      dotsBox.innerHTML = '';
+      const dots = slides.map((_, i) => {
+        const b = document.createElement('button');
+        b.className = 'h-2.5 w-2.5 rounded-full bg-gray-300 transition-all';
+        b.setAttribute('aria-label', `Ir al video ${i + 1}`);
+        b.dataset.dot = i;
+        dotsBox.appendChild(b);
+        b.addEventListener('click', () => goTo(i));
+        return b;
+      });
 
-  // Crear puntitos dinámicamente según la cantidad de fotos
-  dotsBox.innerHTML = '';
-  const dots = slides.map((_, i) => {
-    const b = document.createElement('button');
-    b.className = 'h-2.5 w-2.5 rounded-full bg-gray-300 transition-all';
-    b.setAttribute('aria-label', `Ir a la foto ${i+1}`);
-    b.dataset.i = i;
-    dotsBox.appendChild(b);
-    b.addEventListener('click', () => goTo(i));
-    return b;
-  });
+      function update() {
+        track.style.transform = `translateX(-${index * 100}%)`;
 
-  function update() {
-    track.style.transform = `translateX(-${index * 100}%)`;
-    dots.forEach((d, i) => {
-      const active = i === index;
-      d.classList.toggle('bg-gradient-to-r', active);
-      d.classList.toggle('from-cyan-500', active);
-      d.classList.toggle('to-emerald-500', active);
-      d.classList.toggle('bg-gray-300', !active);
-      d.classList.toggle('w-6', active);
-      d.classList.toggle('w-2.5', !active);
-    });
-  }
+        // Actualiza puntitos
+        dots.forEach((d, i) => {
+          const active = i === index;
+          d.classList.toggle('bg-gradient-to-r', active);
+          d.classList.toggle('from-cyan-500', active);
+          d.classList.toggle('to-emerald-500', active);
+          d.classList.toggle('bg-gray-300', !active);
+          d.classList.toggle('w-6', active);
+          d.classList.toggle('w-2.5', !active);
+        });
 
-  function goTo(i) {
-    const total = slides.length;
-    index = (i + total) % total; // circular
-    update();
-  }
+        // Pausa los videos fuera de pantalla
+        slides.forEach((slide, i) => {
+          const vid = slide.querySelector('video');
+          if (vid && i !== index) vid.pause();
+        });
+      }
 
-  prevBtn?.addEventListener('click', () => goTo(index - 1));
-  nextBtn?.addEventListener('click', () => goTo(index + 1));
+      function goTo(i) {
+        const total = slides.length;
+        index = (i + total) % total; // circular
+        update();
+      }
 
-  // Teclado
-  root.tabIndex = 0;
-  root.addEventListener('keydown', (e) => {
-    if (e.key === 'ArrowRight') goTo(index + 1);
-    if (e.key === 'ArrowLeft')  goTo(index - 1);
-  });
+      prevBtn.addEventListener('click', () => goTo(index - 1));
+      nextBtn.addEventListener('click', () => goTo(index + 1));
 
-  // Swipe en móvil
-  let startX = 0, deltaX = 0, touching = false;
-  const threshold = 40;
-  root.addEventListener('touchstart', (e) => {
-    touching = true;
-    startX = e.touches[0].clientX;
-    deltaX = 0;
-  }, { passive: true });
-  root.addEventListener('touchmove', (e) => {
-    if (!touching) return;
-    deltaX = e.touches[0].clientX - startX;
-  }, { passive: true });
-  root.addEventListener('touchend', () => {
-    if (!touching) return;
-    if (Math.abs(deltaX) > threshold) goTo(index + (deltaX < 0 ? 1 : -1));
-    touching = false;
-  });
+      // Teclado
+      root.tabIndex = 0;
+      root.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight') goTo(index + 1);
+        if (e.key === 'ArrowLeft') goTo(index - 1);
+      });
 
-  update();
-})();
-</script>
+      // Swipe en móvil (sin bloquear gestos del video)
+      let startX = 0, deltaX = 0, touching = false;
+      const threshold = 40;
 
+      root.addEventListener('touchstart', (e) => {
+        if (e.target.tagName === 'VIDEO') return;
+        touching = true;
+        startX = e.touches[0].clientX;
+        deltaX = 0;
+      }, { passive: true });
 
- <!-- separado de -->
-<script>
-(() => {
-  const root = document.getElementById('yt-carousel');
-  if (!root) return;
+      root.addEventListener('touchmove', (e) => {
+        if (!touching) return;
+        deltaX = e.touches[0].clientX - startX;
+      }, { passive: true });
 
-  const track = root.querySelector('[data-yt-track]');
-  const slides = Array.from(track.children);
-  const prevBtn = root.querySelector('[data-yt-prev]');
-  const nextBtn = root.querySelector('[data-yt-next]');
-  const dotsBox = root.querySelector('[data-yt-dots]');
+      root.addEventListener('touchend', () => {
+        if (!touching) return;
+        if (Math.abs(deltaX) > threshold) goTo(index + (deltaX < 0 ? 1 : -1));
+        touching = false;
+      });
 
-  let index = 0;
-  // Crear puntos
-  dotsBox.innerHTML = '';
-  const dots = slides.map((_, i) => {
-    const b = document.createElement('button');
-    b.className = 'h-2.5 w-2.5 rounded-full bg-gray-300 transition-all';
-    b.setAttribute('aria-label', `Ir al video ${i+1}`);
-    b.addEventListener('click', () => goTo(i));
-    dotsBox.appendChild(b);
-    return b;
-  });
-
-  function lazyLoadIframe(slideIdx) {
-    const iframe = slides[slideIdx].querySelector('iframe');
-    if (iframe && !iframe.src) {
-      const url = iframe.dataset.src;
-      if (url) iframe.src = url;
-    }
-  }
-
-  function stopIframe(slideIdx) {
-    const iframe = slides[slideIdx]?.querySelector('iframe');
-    if (!iframe || !iframe.src) return;
-    const current = iframe.src;
-    iframe.src = '';
-    iframe.dataset.src = current;
-  }
-
-  function update() {
-    track.style.transform = `translateX(-${index * 100}%)`;
-    dots.forEach((d, i) => {
-      const active = i === index;
-      d.classList.toggle('bg-gradient-to-r', active);
-      d.classList.toggle('from-cyan-500', active);
-      d.classList.toggle('to-emerald-500', active);
-      d.classList.toggle('bg-gray-300', !active);
-      d.classList.toggle('w-6', active);
-      d.classList.toggle('w-2.5', !active);
-    });
-    slides.forEach((_, i) => {
-      if (i === index) lazyLoadIframe(i);
-      else stopIframe(i);
-    });
-  }
-
-  function goTo(i) {
-    const total = slides.length;
-    index = (i + total) % total;
-    update();
-  }
-
-  prevBtn.addEventListener('click', () => goTo(index - 1));
-  nextBtn.addEventListener('click', () => goTo(index + 1));
-
-  root.tabIndex = 0;
-  root.addEventListener('keydown', (e) => {
-    if (e.key === 'ArrowRight') goTo(index + 1);
-    if (e.key === 'ArrowLeft')  goTo(index - 1);
-  });
-
-  update();
-})();
-</script>
+      update(); // estado inicial
+    })();
+  </script>
 
 
 
-<!-- separado de -->
+  <!-- separado de -->
+
+  <script>
+    (() => {
+      const openBtn = document.getElementById('openPlan');
+      const box = document.getElementById('planLightbox');
+      if (!openBtn || !box) return;
+
+      const closeEls = box.querySelectorAll('[data-close]');
+
+      function open() {
+        box.classList.remove('hidden');
+        document.body.classList.add('overflow-hidden');
+      }
+      function close() {
+        box.classList.add('hidden');
+        document.body.classList.remove('overflow-hidden');
+      }
+
+      openBtn.addEventListener('click', open);
+      closeEls.forEach(el => el.addEventListener('click', close));
+      window.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
+    })();
+  </script>
+
+  <!-- separado de galeria -->
+  <script>
+    (() => {
+      const root = document.getElementById('gallery-carousel');
+      if (!root) return;
+
+      const track = root.querySelector('[data-ic-track]');
+      const slides = Array.from(track.children);
+      const prevBtn = root.querySelector('[data-ic-prev]');
+      const nextBtn = root.querySelector('[data-ic-next]');
+
+      // Crea el contenedor de dots si no existe
+      let dotsBox = root.querySelector('[data-ic-dots]');
+      if (!dotsBox) {
+        dotsBox = document.createElement('div');
+        dotsBox.className = 'mt-4 flex items-center justify-center gap-2';
+        dotsBox.setAttribute('data-ic-dots', '');
+        root.appendChild(dotsBox);
+      }
+
+      let index = 0;
+
+      // Crear puntitos dinámicamente según la cantidad de fotos
+      dotsBox.innerHTML = '';
+      const dots = slides.map((_, i) => {
+        const b = document.createElement('button');
+        b.className = 'h-2.5 w-2.5 rounded-full bg-gray-300 transition-all';
+        b.setAttribute('aria-label', `Ir a la foto ${i + 1}`);
+        b.dataset.i = i;
+        dotsBox.appendChild(b);
+        b.addEventListener('click', () => goTo(i));
+        return b;
+      });
+
+      function update() {
+        track.style.transform = `translateX(-${index * 100}%)`;
+        dots.forEach((d, i) => {
+          const active = i === index;
+          d.classList.toggle('bg-gradient-to-r', active);
+          d.classList.toggle('from-cyan-500', active);
+          d.classList.toggle('to-emerald-500', active);
+          d.classList.toggle('bg-gray-300', !active);
+          d.classList.toggle('w-6', active);
+          d.classList.toggle('w-2.5', !active);
+        });
+      }
+
+      function goTo(i) {
+        const total = slides.length;
+        index = (i + total) % total; // circular
+        update();
+      }
+
+      prevBtn?.addEventListener('click', () => goTo(index - 1));
+      nextBtn?.addEventListener('click', () => goTo(index + 1));
+
+      // Teclado
+      root.tabIndex = 0;
+      root.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight') goTo(index + 1);
+        if (e.key === 'ArrowLeft') goTo(index - 1);
+      });
+
+      // Swipe en móvil
+      let startX = 0, deltaX = 0, touching = false;
+      const threshold = 40;
+      root.addEventListener('touchstart', (e) => {
+        touching = true;
+        startX = e.touches[0].clientX;
+        deltaX = 0;
+      }, { passive: true });
+      root.addEventListener('touchmove', (e) => {
+        if (!touching) return;
+        deltaX = e.touches[0].clientX - startX;
+      }, { passive: true });
+      root.addEventListener('touchend', () => {
+        if (!touching) return;
+        if (Math.abs(deltaX) > threshold) goTo(index + (deltaX < 0 ? 1 : -1));
+        touching = false;
+      });
+
+      update();
+    })();
+  </script>
 
 
- <!-- separado de -->
+  <!-- separado de -->
+  <script>
+    (() => {
+      const root = document.getElementById('yt-carousel');
+      if (!root) return;
+
+      const track = root.querySelector('[data-yt-track]');
+      const slides = Array.from(track.children);
+      const prevBtn = root.querySelector('[data-yt-prev]');
+      const nextBtn = root.querySelector('[data-yt-next]');
+      const dotsBox = root.querySelector('[data-yt-dots]');
+
+      let index = 0;
+      // Crear puntos
+      dotsBox.innerHTML = '';
+      const dots = slides.map((_, i) => {
+        const b = document.createElement('button');
+        b.className = 'h-2.5 w-2.5 rounded-full bg-gray-300 transition-all';
+        b.setAttribute('aria-label', `Ir al video ${i + 1}`);
+        b.addEventListener('click', () => goTo(i));
+        dotsBox.appendChild(b);
+        return b;
+      });
+
+      function lazyLoadIframe(slideIdx) {
+        const iframe = slides[slideIdx].querySelector('iframe');
+        if (iframe && !iframe.src) {
+          const url = iframe.dataset.src;
+          if (url) iframe.src = url;
+        }
+      }
+
+      function stopIframe(slideIdx) {
+        const iframe = slides[slideIdx]?.querySelector('iframe');
+        if (!iframe || !iframe.src) return;
+        const current = iframe.src;
+        iframe.src = '';
+        iframe.dataset.src = current;
+      }
+
+      function update() {
+        track.style.transform = `translateX(-${index * 100}%)`;
+        dots.forEach((d, i) => {
+          const active = i === index;
+          d.classList.toggle('bg-gradient-to-r', active);
+          d.classList.toggle('from-cyan-500', active);
+          d.classList.toggle('to-emerald-500', active);
+          d.classList.toggle('bg-gray-300', !active);
+          d.classList.toggle('w-6', active);
+          d.classList.toggle('w-2.5', !active);
+        });
+        slides.forEach((_, i) => {
+          if (i === index) lazyLoadIframe(i);
+          else stopIframe(i);
+        });
+      }
+
+      function goTo(i) {
+        const total = slides.length;
+        index = (i + total) % total;
+        update();
+      }
+
+      prevBtn.addEventListener('click', () => goTo(index - 1));
+      nextBtn.addEventListener('click', () => goTo(index + 1));
+
+      root.tabIndex = 0;
+      root.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight') goTo(index + 1);
+        if (e.key === 'ArrowLeft') goTo(index - 1);
+      });
+
+      update();
+    })();
+  </script>
+
+
+
+  <!-- separado de -->
+
+
+  <!-- separado de -->
 
 
 
 
 
- <!-- FOOTER -->
-<footer class="relative mt-20 text-white">
-  <!-- fondo con degradado -->
-  <div class="absolute inset-0 -z-10 bg-gradient-to-r from-cyan-600 via-emerald-600 to-cyan-700"></div>
-  <!-- onda superior -->
-  <svg aria-hidden="true" viewBox="0 0 1440 90" class="w-full h-[70px] -translate-y-6 text-cyan-50/70">
-    <path fill="currentColor" d="M0,64L60,74.7C120,85,240,107,360,101.3C480,96,600,64,720,58.7C840,53,960,75,1080,74.7C1200,75,1320,53,1380,42.7L1440,32L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"/>
-  </svg>
+  <!-- FOOTER -->
+  <footer class="relative mt-20 text-white">
+    <!-- fondo con degradado -->
+    <div class="absolute inset-0 -z-10 bg-gradient-to-r from-cyan-600 via-emerald-600 to-cyan-700"></div>
+    <!-- onda superior -->
+    <svg aria-hidden="true" viewBox="0 0 1440 90" class="w-full h-[70px] -translate-y-6 text-cyan-50/70">
+      <path fill="currentColor"
+        d="M0,64L60,74.7C120,85,240,107,360,101.3C480,96,600,64,720,58.7C840,53,960,75,1080,74.7C1200,75,1320,53,1380,42.7L1440,32L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z" />
+    </svg>
 
-  <div class="max-w-6xl mx-auto px-6 pb-10">
-    <div class="flex flex-col md:flex-row items-center justify-between gap-6">
-      <!-- Social -->
-      <div class="flex items-center gap-4">
-        <a href="https://facebook.com" target="_blank" rel="noopener"
-           class="group inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/10 hover:bg-white/20 ring-1 ring-white/20 transition">
-          <!-- Icono Facebook (inline) -->
-          <svg viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor" role="img" aria-label="Facebook">
-            <path d="M22 12.06C22 6.48 17.52 2 11.94 2S2 6.48 2 12.06c0 5.03 3.68 9.2 8.49 9.94v-7.03H7.9v-2.9h2.59V9.41c0-2.56 1.52-3.98 3.86-3.98 1.12 0 2.29.2 2.29.2v2.52h-1.29c-1.27 0-1.66.79-1.66 1.6v1.92h2.83l-.45 2.9h-2.38V22c4.81-.74 8.49-4.9 8.49-9.94Z"/>
-          </svg>
-        </a>
-
-        <a href="https://wa.me/51989212154" target="_blank" rel="noopener"
-           class="group inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/10 hover:bg-white/20 ring-1 ring-white/20 transition">
-          <!-- Icono WhatsApp (inline) -->
-          <svg viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor" role="img" aria-label="WhatsApp">
-            <path d="M20.5 3.5A10.9 10.9 0 0 0 3.2 17.7L2 22l4.4-1.2A10.9 10.9 0 1 0 20.5 3.5Zm-8.4 17a9 9 0 0 1-4.6-1.3l-.3-.2-2.7.7.7-2.6-.2-.3a9 9 0 1 1 7.1 3.7ZM8.6 7.7c.2-.5.4-.5.7-.5h.6c.2 0 .5 0 .7.6.2.6.8 2 .8 2.1s.1.3 0 .5c-.1.2-.2.4-.4.6-.2.2-.4.5-.2.9.2.4.9 1.5 2 2.4 1.4 1 2.1 1.2 2.5 1 .4-.2.6-.5.8-.8.2-.3.4-.4.7-.3l2 .9c.5.2.9.4 1 .6.1.2.1 1-.5 1.9-.6.9-1.8 1.3-2.5 1.3-.6 0-1.1 0-2.5-.7-1.4-.7-2.7-1.8-3.9-3.1-1.1-1.2-2-2.6-2.3-3.1-.3-.5-.6-1.3-.6-2 0-.7.4-1.3.6-1.6Z"/>
-          </svg>
-        </a>
-
-        <a href="https://instagram.com" target="_blank" rel="noopener"
-           class="group inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/10 hover:bg-white/20 ring-1 ring-white/20 transition">
-          <!-- Icono Instagram (inline) -->
-          <svg viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor" role="img" aria-label="Instagram">
-            <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.5A5.5 5.5 0 1 1 6.5 13 5.5 5.5 0 0 1 12 7.5Zm0 2A3.5 3.5 0 1 0 15.5 13 3.5 3.5 0 0 0 12 9.5Zm5.25-3.25a1.25 1.25 0 1 1-1.25 1.25 1.25 1.25 0 0 1 1.25-1.25Z"/>
-          </svg>
-        </a>
-
-        <a href="https://x.com" target="_blank" rel="noopener"
-           class="group inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/10 hover:bg-white/20 ring-1 ring-white/20 transition">
-          <!-- Icono X (inline) -->
-          <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" role="img" aria-label="X">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3 3l18 18M21 3 3 21"/>
-          </svg>
-        </a>
-      </div>
-
-      <!-- Crédito -->
-      <div class="w-full text-center text-sm">
-        <p class="leading-tight">
-          © <span id="year"></span> Las Casuarinas del Sur 
-          <br>
-          <a href="https://jeansanchez.webcindario.com/" target="_blank" rel="noopener"
-             class="font-semibold underline underline-offset-4 decoration-emerald-200 hover:decoration-white">
-            Web diseñada por JEAN SANCHEZ DEV.
+    <div class="max-w-6xl mx-auto px-6 pb-10">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        <!-- Social -->
+        <div class="flex items-center gap-4">
+          <a href="https://facebook.com" target="_blank" rel="noopener"
+            class="group inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/10 hover:bg-white/20 ring-1 ring-white/20 transition">
+            <!-- Icono Facebook (inline) -->
+            <svg viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor" role="img" aria-label="Facebook">
+              <path
+                d="M22 12.06C22 6.48 17.52 2 11.94 2S2 6.48 2 12.06c0 5.03 3.68 9.2 8.49 9.94v-7.03H7.9v-2.9h2.59V9.41c0-2.56 1.52-3.98 3.86-3.98 1.12 0 2.29.2 2.29.2v2.52h-1.29c-1.27 0-1.66.79-1.66 1.6v1.92h2.83l-.45 2.9h-2.38V22c4.81-.74 8.49-4.9 8.49-9.94Z" />
+            </svg>
           </a>
-        </p>
+
+          <a href="https://wa.me/51989212154" target="_blank" rel="noopener"
+            class="group inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/10 hover:bg-white/20 ring-1 ring-white/20 transition">
+            <!-- Icono WhatsApp (inline) -->
+            <svg viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor" role="img" aria-label="WhatsApp">
+              <path
+                d="M20.5 3.5A10.9 10.9 0 0 0 3.2 17.7L2 22l4.4-1.2A10.9 10.9 0 1 0 20.5 3.5Zm-8.4 17a9 9 0 0 1-4.6-1.3l-.3-.2-2.7.7.7-2.6-.2-.3a9 9 0 1 1 7.1 3.7ZM8.6 7.7c.2-.5.4-.5.7-.5h.6c.2 0 .5 0 .7.6.2.6.8 2 .8 2.1s.1.3 0 .5c-.1.2-.2.4-.4.6-.2.2-.4.5-.2.9.2.4.9 1.5 2 2.4 1.4 1 2.1 1.2 2.5 1 .4-.2.6-.5.8-.8.2-.3.4-.4.7-.3l2 .9c.5.2.9.4 1 .6.1.2.1 1-.5 1.9-.6.9-1.8 1.3-2.5 1.3-.6 0-1.1 0-2.5-.7-1.4-.7-2.7-1.8-3.9-3.1-1.1-1.2-2-2.6-2.3-3.1-.3-.5-.6-1.3-.6-2 0-.7.4-1.3.6-1.6Z" />
+            </svg>
+          </a>
+
+          <a href="https://instagram.com" target="_blank" rel="noopener"
+            class="group inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/10 hover:bg-white/20 ring-1 ring-white/20 transition">
+            <!-- Icono Instagram (inline) -->
+            <svg viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor" role="img" aria-label="Instagram">
+              <path
+                d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.5A5.5 5.5 0 1 1 6.5 13 5.5 5.5 0 0 1 12 7.5Zm0 2A3.5 3.5 0 1 0 15.5 13 3.5 3.5 0 0 0 12 9.5Zm5.25-3.25a1.25 1.25 0 1 1-1.25 1.25 1.25 1.25 0 0 1 1.25-1.25Z" />
+            </svg>
+          </a>
+
+          <a href="https://x.com" target="_blank" rel="noopener"
+            class="group inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/10 hover:bg-white/20 ring-1 ring-white/20 transition">
+            <!-- Icono X (inline) -->
+            <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" role="img"
+              aria-label="X">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 3l18 18M21 3 3 21" />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Crédito -->
+        <div class="w-full text-center text-sm">
+          <p class="leading-tight">
+            © <span id="year"></span> Las Casuarinas del Sur
+            <br>
+            <a href="https://jeansanchez.webcindario.com/" target="_blank" rel="noopener"
+              class="font-semibold underline underline-offset-4 decoration-emerald-200 hover:decoration-white">
+              Web diseñada por JEAN SANCHEZ DEV.
+            </a>
+          </p>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
-<script>
-  // Año actual
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
- <!-- separado de -->
+  <script>
+    // Año actual
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <!-- separado de -->
 
 
 
 </body>
+
 </html>
